@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Генератор паролю</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="result-input">
+            <input type="text" id="result" readonly>
+            <button id="btn-copy"><i class="fa-sharp fa-regular fa-copy"></i></button>
+        </div>
+
+        <div class="checkboxes-container">
+            <div>
+                <p>Password length</p>
+                <input type="number" name="length" id="length" min="4" max="30" value="4">
+            </div>
+            <div>
+                <p>Include uppercase letters</p>
+                <input type="checkbox" name="uppercases" id="uppercase">
+            </div>
+            <div>
+                <p>Include lowercase letters</p>
+                <input type="checkbox" name="lowercases" id="lowercase">
+            </div>
+            <div>
+                <p>Include numbers</p>
+                <input type="checkbox" name="numbers" id="number">
+            </div>
+            <div>
+                <p>Include symbols</p>
+                <input type="checkbox" name="symbols" id="symbol">
+            </div>
+        </div>
+
+        <div class="btn-container">
+            <button id="btn-generate">Generate password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

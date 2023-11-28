@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Inter:wght@300;400;600&family=Poppins:wght@300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1269e4;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.container {
+    background-color: #024aae;
+    display: flex;
+    width: min(700px, 90%);
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.5rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.result-input input {
+    width: 100%;
+    background-color: #00000000;
+    font-size: 1.5rem;
+}
+
+.result-input button {
+    background-color: #00265c;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.result-input {
+    background-color: #00225181;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.checkboxes-container {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.checkboxes-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkboxes-container input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.checkboxes-container input[type="number"] {
+    color: #00265c;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+
+.btn-container button {
+    padding: 1rem;
+    width: 100%;
+    background-color: #00265c;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 550px) {
+    * {
+        font-size: 90%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
